@@ -3,6 +3,8 @@
 namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
+use App\Repositories\TicketRepositoryInterface;
+use App\Repositories\EloquentTicketRepository;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -19,6 +21,6 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
-        //
+        $this->app->bind(TicketRepositoryInterface::class, EloquentTicketRepository::class);
     }
 }

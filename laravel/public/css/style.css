@@ -1,0 +1,101 @@
+body {
+    font-family: sans-serif;
+    padding: 12px;
+    background: #f7f7f7;
+}
+.widget {
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.widget_body {
+    background: #fff;
+    width: 580px;
+    display: flex;
+    padding: 16px;
+    border-radius: 8px;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+.widget_body form {
+    width: 95%;
+    gap: 2px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.widget_body form input {
+    border: none;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    width: 100%;
+    height: 31px;
+    padding: 6px;
+    border-radius: 8px;
+}
+.widget_body form textarea {
+    border: none;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    width: 100%;
+    height: 41px;
+    padding: 6px;
+    border-radius: 8px;
+}
+
+.widget_body form .file {
+    border: none !important;
+    box-shadow: none !important;
+}
+.widget_body form .submit {
+    width: 100%;
+    justify-content: center;
+    display: flex;
+}
+.widget_body form .submit button {
+    width: 100px;
+    height: 40px;
+    background: #968bf1;
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.widget_body h3 {
+    font-size: 27px;
+}
+
+.form_control {
+    width: 100%;
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form_control .error {
+    margin-bottom: 5px;
+    margin-top: 5px;
+    color: red;
+    font-size: 0.9em;
+}
+
+.success_message {
+    border-radius: 8px;
+    color: #198754;
+    margin-bottom: 10px;
+    width: 95%;
+    background: #1987542e;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+}
+
+.auth_form {
+    gap: 20px !important;
+}
